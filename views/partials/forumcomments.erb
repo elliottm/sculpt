@@ -1,0 +1,7 @@
+<% @comments.each do |comment| %>
+	<div class="forumcard">
+		<span>Commented by: <%= comment.useremail %> ||</span> 
+		<span><%= comment.created_at %></span>
+		<p><%= comment.body %></p>
+	</div>
+<% end %>

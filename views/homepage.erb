@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<%= erb :'partials/head' %>
+
+<body>
+      <%= erb :'partials/navheader' %>
+
+      <%= erb :'partials/navbanner' %>
+      <div class="container-fluid"  >
+          <div class="row" style="text-align:center;">
+              <h5>Specialists in 1/3 scale resin movie marquettes</h5>
+              <a href="/sculpts" style="font-size:10px;" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Psycho 1960">"We all go a little mad sometimes"</a>
+          </div>
+</div>
+      <%= erb :'partials/homemain' %>
+<br>
+<br>
+<br>
+<br>
+      <%= erb :'partials/footer' %>
+<!-- Modal -->
+  <div class="modal fade" id="myModalTurtle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 style="color:#CF0000;" class="modal-title" id="myModalLabel">Donatello Teenage Mutant Ninja Turtle</h1>
+        </div>
+        <div class="modal-body">
+          <h1>“Cowabunga Dude”</h1>
+          <h5>Sculpt Fiction presents the first in our TMNT series, the superHero that is, Donatello. This Exclusive turtle features a unique pizza base and wooden detachable bo-staff.  Limited to 500 worldwide.</h5>
+        </div>
+        <div class="modal-footer">
+          <a type="button" class="btn btn-default"> 
+                <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=RG7Q4KNT2PFVJ" 
+                  data-button="buynow" 
+                  data-name="Donatello TMNT by Sculpt Fiction" 
+                  data-amount="259" 
+                  data-currency="GBP" 
+              ></script>  
+          </a>
+          <a type="button" href="/donatello" class="btn btn-default">See More</a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div class="modal fade" id="myModalMax" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 style="color:#CF0000;" class="modal-title" id="myModalLabel">Mad Max Road Warrior</h1>
+        </div>
+        <div class="modal-body">
+          <h1>“I'm just here for the gasoline”</h1>
+          <h5>Sculpt Fiction presents the first in our Mad Max series. This Exclusive Max features a highway road base and  includes his most trusted friend "DOG". Limited to 150 worldwide.</h5>
+        </div>
+        <div class="modal-footer">
+          <a type="button" class="btn btn-default"> 
+              <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=RG7Q4KNT2PFVJ"  data-button="buynow" 
+                  data-name="MadMax Road Warrior by Sculpt Fiction" 
+                  data-amount="289" 
+                  data-currency="GBP" 
+              ></script>
+          </a>
+          <a type="button" href="/madmax" class="btn btn-default">See More</a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--   http://paypal.github.io/JavaScriptButtons/ -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

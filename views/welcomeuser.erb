@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<%= erb :'partials/head' %>
+
+<body>
+      <%= erb :'partials/navheader' %>
+      <%= erb :'partials/navbanner' %>
+      <p>Welcome <%= current_user.email %>
+      <%= erb :'partials/forum_main' %>
+<br>
+<br>
+<br>
+<br>
+      <%= erb :'partials/footer' %>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+
+  //  $('.forumdisplaycard').mouseenter(function() {
+		// var overlay = $(this).find($('.picoverlay'));
+	 //    $(overlay).addClass('changeopacity').mouseleave(function() {
+	 //    	$(overlay).removeClass('changeopacity');
+	 //    });
+  //   });
+
+  //   $('.forumdisplaycard').on("click", function() {
+		// var route = $(this).data('href');
+		// window.location.href="http://www.sculptfiction.co.uk" + route
+  //   });
+
+	</script>
+
+</body>
+
+</html>
+

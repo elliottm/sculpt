@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<%= erb :'partials/head' %>
+
+<body>
+      <%= erb :'partials/navheader' %>
+      <%= erb :'partials/navbanner' %>
+
+      <%= erb :'partials/donatello' %>
+<br>
+<br>
+<br>
+<br>
+      <%= erb :'partials/footer' %>
+<!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 style="color:#CF0000;" class="modal-title" id="myModalLabel">Donatello TMNT by Sculpt Ficiton</h4>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <h1>“Cowabunga Dude”</h1>
+          <h5>Sculpt Fiction presents the first in our TMNT series, the superHero that is, Donatello. This Exclusive turtle features a unique pizza base and wooden detachable bo-staff. Limited to 500 worldwide</h5>
+          <a type="button" href="/timelines" class="btn btn-default">Sculpt Timeline</a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <script>
+
+// $('#calculateShipping').on('click', function(e) {
+
+//     e.preventDefault();
+    
+//     var country = $('#country_code option:selected').attr('Value')
+//     var post_code_or_zip = $('#zipcode').val()
+
+//     $('#quotes').empty();
+
+//     var request = $.ajax({
+//       url: "/testshipping",
+//       type: "GET",
+//       data: { country: country, zip: post_code_or_zip },
+//     });
+     
+//     request.done(function( msg ) {
+//       console.log( msg );
+//       results = JSON.parse(msg);
+//       display_list = $('#quotes');
+//         results.forEach(function(entry) {
+//           display_list.append(
+//               '<option value="' + entry[1] + '">' + entry[0] + ' _ Price _ $' + entry[1] + '</option>'
+//           );
+//         })
+//     });
+     
+//     request.fail(function( textStatus ) {
+//       console.log(textStatus);
+//       $('#quotes').append('<option>' + 'Something went wrong, try again or pay without shipping and we will contact you' + '</option>');
+//     });
+
+// });
+
+// $( "#quotes" )
+//   .change(function () {
+//     var str = "";
+//     $( "#quotes option:selected" ).each(function() {
+//       str += $( this ).attr('Value');
+//     });
+//     $("#shipping").empty();
+//     var num = str.substring(0,str.length-2);
+//     $('#shipping').text( 'Shipping $' + num + '.00'  );
+//     $('#stripeForm').append(
+//         '<input type="hidden" name="shipping_quote" value=" ' + num + ' ">'
+//     );
+//   })
+
+  $( ".imgModal" ).on('click', function(e) {
+      var img = $(this).attr('src')
+      $('.modal-body').empty();
+      $('.modal-body').append(
+        '<img class="img-responsive" src="'+ img +'" >'
+      )
+  });
+
+
+
+  </script>
+
+
+</body>
+
+</html>
+

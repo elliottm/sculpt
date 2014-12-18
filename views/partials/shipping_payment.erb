@@ -1,0 +1,45 @@
+<br>
+  <div style="text-align:center;" class="row">
+
+    <div class="col-md-6">
+            <h3>Secure Payments Provided By PayPal.</h3>
+            <h4>It doesn't matter if you don't have an account.</h4>
+            <h4>Quick, Simiply and Easy.</h4>
+            <article>
+              <label>
+                <span id="maxAmount" value="34999">Amount: £289.00</span>
+                <span id="shipping" type="hidden" value="">Shipping: included</span>
+              </label>
+            </article>
+            <h5 style="text-align:center; color:#CF0000;">Pay with Paypal or by Card<script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=RG7Q4KNT2PFVJ"  data-button="buynow" 
+                  data-name="MadMax Road Warrior by Sculpt Fiction" 
+                  data-amount="289" 
+                  data-currency="GBP" 
+              ></script>
+            </h5>
+    </div>
+
+    <div class="col-md-6">
+        <h3>Secure Payments Provided By Stripe.</h3>
+        <form id="stripeForm" action="/charge" method="post" class="payment">
+          
+          <article>
+            <label>
+              <span id="maxAmount" value="34999">Amount: £289.00</span>
+              <span id="shipping" type="hidden" value="">Payment method currently unavailable.</span>
+            </label>
+          </article>
+          <p><input type="text" name="name" placeholder="Enter your name"></p>
+          <p><input type="text" name="address_1" placeholder="Enter your address line 1"></p>
+          <p><input type="text" name="postcode" placeholder="Enter your post or zip code"></p>
+          <input type="hidden" name="product" value="Madmax">
+          <br>
+          <script id="stripeorderbutton" src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="<%= settings.publishable_key %>"></script>
+         </form>
+
+       </div>
+  </div>
+
+
+
+ 

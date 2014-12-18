@@ -1,0 +1,38 @@
+<% if current_user %>
+		Welcome, <%= current_user.email %>
+		<% redirect to('/welcome') %>
+<% else %>
+		
+<div class="container-fluid">
+      <div class="row">
+          <u><h1 style="text-align:center; color:#CF0000;">Sign up or Sign in</h1></u>
+      </div>
+
+      <div style="text-align:center;" class="row">
+          <div class="col-xs-6">
+               <form action="/sessions" method="post">
+				<p><input name="signInEmail" type="text" placeholder="Enter email"></p>
+
+				<p><input name="signInPassword" type="text" placeholder="Enter password"></p>
+
+				<input type="submit" value="Sign in">
+		    	</form>
+          </div>
+       	  <div class="col-xs-6">
+            <form action="/user/new" method="post">
+				<p><input type="text" name="name" placeholder="Enter your name"></p>
+
+				<p><input type="text" name="email" placeholder="Enter your email"></p>
+
+				<p><input type="text" name="password" placeholder="Enter a password"></p>
+
+				<p><input type="text" name="password_confirmation" placeholder="Confirm password"></p>
+				<input type="submit" value="Sign up">
+			</form>
+          </div>
+      </div>
+</div>
+
+<% end %>
+
+

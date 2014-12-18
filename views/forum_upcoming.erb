@@ -1,0 +1,37 @@
+<html>
+
+<%= erb :'partials/head' %>
+<%= erb :'partials/navbanner' %>
+
+<div class="homepagecarousel">
+
+	<% if current_user %>
+	<div class="newpostform">
+		<h1>Welcome to the SculptFiction Upcoming Forum:</h1>
+		<br>
+		<form action="/comment" method="post">
+			<textarea name="comment" placeholder="Enter your comment"></textarea>
+			   <input type="hidden" name="forum" value="upcoming">
+			   <input type="hidden" name="useremail" value="<%= current_user.email %>">
+			<input type="submit" value="Post">
+		</form>
+	</div>
+	<% end %>
+	
+	<h1 style="background-color:#E969A8; color:white; text-align:center;">Forum comments regarding Upcoming Sculpts...Chat Away</h1>
+
+	<%= erb :'partials/forumcomments' %>
+
+</div>
+
+<div class="homepagefooter">
+    <br>
+    <p>&copy Sculpt Ficiton is the registered trademark and copyright.
+    All Rights Reserved.</p>
+    <p>Series content, product specifications, release dates and pricing are subject to change.</p>
+    <br>
+    <a href="">Privacy Policy</a> <a href="">Legal Information</p>
+</div>
+
+
+</html>
