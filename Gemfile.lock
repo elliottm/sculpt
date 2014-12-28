@@ -1,21 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    active_shipping (0.12.4)
-      active_utils (~> 2.2.0)
-      activesupport (>= 2.3.5)
-      builder
-      i18n
-      json (>= 1.5.1)
-    active_utils (2.2.3)
-      activesupport (>= 2.3.11)
-      i18n
-    activesupport (4.1.8)
-      i18n (~> 0.6, >= 0.6.9)
-      json (~> 1.7, >= 1.7.7)
-      minitest (~> 5.1)
-      thread_safe (~> 0.1)
-      tzinfo (~> 1.1)
     addressable (2.3.6)
     bcrypt (3.1.9)
     bcrypt-ruby (3.1.5)
@@ -108,14 +93,12 @@ GEM
     gherkin (2.12.2)
       multi_json (~> 1.3)
     highline (1.6.21)
-    i18n (0.6.11)
     json (1.8.1)
     json_pure (1.8.1)
     launchy (2.4.3)
       addressable (~> 2.3)
     mime-types (2.4.3)
     mini_portile (0.6.1)
-    minitest (5.5.0)
     multi_json (1.10.1)
     multi_test (0.1.1)
     netrc (0.10.1)
@@ -171,10 +154,7 @@ GEM
       diff-lcs (>= 1.1.2)
       extlib (>= 0.9.5)
       highline (>= 1.4.0)
-    thread_safe (0.3.4)
     tilt (1.4.1)
-    tzinfo (1.2.2)
-      thread_safe (~> 0.1)
     uuidtools (2.1.5)
     websocket (1.2.1)
     websocket-driver (0.5.0)
@@ -187,7 +167,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_shipping
   bcrypt
   better_errors
   binding_of_caller

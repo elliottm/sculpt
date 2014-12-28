@@ -34,6 +34,9 @@ Stripe.api_key = settings.secret_key
   end
 
   get '/signup' do
+    if current_user
+      redirect to('/welcome')
+    end
     erb :signup
   end
 
@@ -83,6 +86,7 @@ Stripe.api_key = settings.secret_key
   end
 
   delete '/sessions' do
+    raise params.inspect
     session[:user_id] = nil
     redirect to('/')
   end

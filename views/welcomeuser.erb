@@ -7,7 +7,8 @@
 <body>
       <%= erb :'partials/navheader' %>
       <%= erb :'partials/navbanner' %>
-      <p>Welcome <%= current_user.email %>
+      <p>Welcome <%= current_user.email %></p>
+      <a href="/sessions" name="_method" method="delete">SignOut</a>
       <%= erb :'partials/forum_main' %>
 <br>
 <br>
